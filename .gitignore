@@ -1,0 +1,4 @@
+# Default ignored files
+/.idea/
+/topological-sorting-application.iml
+/target/

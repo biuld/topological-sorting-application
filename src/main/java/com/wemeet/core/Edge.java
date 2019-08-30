@@ -1,10 +1,12 @@
 package com.wemeet.core;
 
+import org.jgrapht.graph.DefaultEdge;
+
 /**
  * Created by biuld on 2019/8/29.
  */
 
-public class Edge {
+public class Edge extends DefaultEdge {
     private String source;
     private String target;
 
@@ -13,19 +15,17 @@ public class Edge {
         this.target = target;
     }
 
+    public Edge() {
+    }
+
+    @Override
     public String getSource() {
         return source;
     }
 
-    public void setSource(String source) {
-        this.source = source;
-    }
-
+    @Override
     public String getTarget() {
         return target;
     }
 
-    public void setTarget(String target) {
-        this.target = target;
-    }
 }
